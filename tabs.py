@@ -75,3 +75,7 @@ class Tab:
         self.__place_widgets()
         self.main_frame.grid(row=row, column=column)
 
+    # This allows you to return the tabs as frames so that you can populate the tabs from the other program.
+    def tab(self, index):
+        return self.frames[index]
+
